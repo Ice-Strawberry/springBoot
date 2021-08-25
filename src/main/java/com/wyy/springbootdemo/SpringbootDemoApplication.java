@@ -16,6 +16,7 @@ public class SpringbootDemoApplication {
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         Object o = Class.forName("com.wyy.springbootdemo.service.impl.UserServiceImpl").newInstance(); // 等同于 new UserServiceImpl()
         System.out.println((UserServiceImpl)o);
+        System.out.println((UserServiceImpl)o);
         SpringApplication.run(SpringbootDemoApplication.class, args);
     }
 }
